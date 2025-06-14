@@ -1,0 +1,1 @@
+self.__BUILD_MANIFEST={__rewrites:{afterFiles:[],beforeFiles:[],fallback:[]},"/_error":["static/chunks/pages/_error-3986dd5834f581dc.js"],"/voicenote/[id]":["static/chunks/pages/voicenote/[id]-f8d52414a3bd293c.js"],sortedPages:["/_app","/_error","/voicenote/[id]"]},self.__BUILD_MANIFEST_CB&&self.__BUILD_MANIFEST_CB();
