@@ -6,5 +6,4 @@ _backup/
 *.zip
 *.mp3
 .vercel
-# public/voices/*
 .vercel
