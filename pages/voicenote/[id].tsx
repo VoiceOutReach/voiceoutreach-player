@@ -20,6 +20,7 @@ export default function VoiceNotePage() {
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-50 px-4">
       <Head>
         <title>Voice Message from VoiceOutReach.ai</title>
+        <meta name="description" content="Listen to a personalized voice note from VoiceOutReach.ai" />
       </Head>
 
       <div className="max-w-md w-full bg-white shadow-xl rounded-2xl p-6 text-center">
@@ -27,12 +28,16 @@ export default function VoiceNotePage() {
         <p className="mb-4 text-gray-600">
           This voice note was sent to you via <strong>VoiceOutReach.ai</strong>
         </p>
-        {audioSrc && (
-          <audio controls className="w-full mb-4">
-            <source src={audioSrc} type="audio/mp3" />
+
+        {audioSrc ? (
+          <audio controls preload="auto" autoPlay className="w-full mb-4">
+            <source src={audioSrc} type="audio/mpeg" />
             Your browser does not support the audio element.
           </audio>
+        ) : (
+          <p className="text-red-500">Voice note loading failed.</p>
         )}
+
         <a
           href="https://www.linkedin.com/messaging/"
           target="_blank"

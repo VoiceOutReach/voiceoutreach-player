@@ -4,6 +4,5 @@ out
 .DS_Store
 _backup/
 *.zip
-*.mp3
 .vercel
 .vercel
